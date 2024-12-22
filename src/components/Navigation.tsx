@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
+import { NavLink } from 'react-router-dom'
 
 declare const window: any;
 
@@ -60,8 +61,9 @@ const Navigation = () => {
     return (
         <header className="flex justify-between items-center md:flex-row flex-col-reverse gap-4">
             <nav className="flex items-center gap-4 uppercase">
-                <a href="#" className="py-2 px-4 bg-gray-100 rounded-md border hover:shadow-lg text-center">stakovanie</a>
-                <a href="#" className="py-2 px-4 bg-gray-100 rounded-md border hover:shadow-lg text-center">lístky</a>
+                <NavLink to="/" className="py-2 px-4 bg-gray-100 rounded-md border hover:shadow-lg text-center">domov</NavLink>
+                <NavLink to="/staking" className="py-2 px-4 bg-gray-100 rounded-md border hover:shadow-lg text-center">stakovanie</NavLink>
+                <NavLink to="/tickets" className="py-2 px-4 bg-gray-100 rounded-md border hover:shadow-lg text-center">lístky</NavLink>
             </nav>
 
             <div className="relative" ref={menuRef}>

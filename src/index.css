@@ -13,12 +13,12 @@
   letter-spacing: 0.05em;
   line-height: 1.168;
   font-weight: normal;
-  color-scheme: light dark;
+  color-scheme: light;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 body {
@@ -34,7 +34,8 @@ main {
   height: 60svh;
 }
 
-button, a {
-  transition: all .15s ease-in-out;
+button, a, input {
+  transition: all .15s ease-in-out !important;
   font-size: 16px;
 }
+
