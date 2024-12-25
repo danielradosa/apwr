@@ -10,7 +10,7 @@ const Tickets = () => {
 
                     <p className="mt-4">Počet lístkov k dispozícií: 236</p>
 
-                    <p className="mt-4">Výška odmeny za lístok: 33.33%</p>
+                    <p className="mt-4">Výška odmeny za lístok: 28.28%</p>
                     <p>Nemáš zakúpené žiadne lístky.</p>
                 </div>
 

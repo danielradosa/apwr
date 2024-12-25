@@ -61,9 +61,18 @@ const Navigation = () => {
     return (
         <header className="flex justify-between items-center md:flex-row flex-col-reverse gap-4">
             <nav className="flex items-center gap-4 uppercase md:flex-row flex-col-reverse">
-                <NavLink to="/" className="py-2 px-4 bg-gray-100 rounded-md border hover:shadow-lg text-center">domov</NavLink>
-                <NavLink to="/staking" className="py-2 px-4 bg-gray-100 rounded-md border hover:shadow-lg text-center">stakovanie</NavLink>
-                <NavLink to="/tickets" className="py-2 px-4 bg-gray-100 rounded-md border hover:shadow-lg text-center">lístky</NavLink>
+                <NavLink to="/" rel='prefetch' className="py-2 px-4 bg-gray-100 rounded-md 
+                border hover:shadow-lg text-center">
+                    domov
+                </NavLink>
+                <NavLink to="/staking" rel='prefetch' className="py-2 px-4 bg-gray-100 rounded-md 
+                border hover:shadow-lg text-center">
+                    stakovanie
+                </NavLink>
+                <NavLink to="/tickets" rel='prefetch' className="py-2 px-4 bg-gray-100 rounded-md 
+                border hover:shadow-lg text-center">
+                    lístky
+                </NavLink>
             </nav>
 
             <div className="relative" ref={menuRef}>
