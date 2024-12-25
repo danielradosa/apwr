@@ -26,12 +26,15 @@ body {
   max-height: 100svh;
 }
 
+header {
+  position: sticky;
+}
+
 main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 60svh;
 }
 
 button, a, input {

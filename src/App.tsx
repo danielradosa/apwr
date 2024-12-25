@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <Navigation />
-      <main className="mt-8 w-full">
+      <main className="mt-[2em] w-full">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/staking" element={<Staking />} />
