@@ -80,23 +80,26 @@ const Navigation = () => {
                     <>
                         <button
                             className="uppercase text-[#ff0077] py-2 px-4 bg-gray-100 rounded-md border
-                            hover:shadow-lg"
+                            hover:shadow-lg flex items-center gap-2"
                             onClick={() => setMenuVisible(!menuVisible)}
                         >
-                            pripojená: <span className="font-bold">{shortenAddress(walletAddress)}</span>
+                            <div className="animate-pulse flex items-center">
+                                <box-icon name="circle" type="solid" size="15px" color="#ff0077" ></box-icon>
+                            </div>
+                            <span className="font-bold">{shortenAddress(walletAddress)}</span>
                         </button>
 
                         {menuVisible && (
-                            <div className="absolute right-0 mt-2 rounded-md w-full bg-gray-100 border">
+                            <div className="absolute right-0 mt-2 rounded-md w-full bg-gray-100 border w-[210px]">
                                 <button
                                     className="w-full px-4 py-2 flex items-center gap-2 hover:bg-white
                                     rounded-md justify-center"
                                     onClick={copyToClipboard}
                                 >
                                     {copied ? (
-                                        <box-icon name="check-double" size="16px" color="green"></box-icon>
+                                        <box-icon name="check-double" size="15px" color="green"></box-icon>
                                     ) : (
-                                        <box-icon name="copy-alt" size="16px"></box-icon>
+                                        <box-icon name="copy-alt" size="15px"></box-icon>
                                     )}
                                     Skopírovať adresu
                                 </button>
@@ -105,7 +108,7 @@ const Navigation = () => {
                                     rounded-md justify-center"
                                     onClick={disconnectWallet}
                                 >
-                                    <box-icon name="log-out-circle" size="16px" color="red"></box-icon>
+                                    <box-icon name="log-out-circle" size="15px" color="red"></box-icon>
                                     Odpojiť peňaženku
                                 </button>
                             </div>

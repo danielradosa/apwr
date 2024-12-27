@@ -39,6 +39,6 @@ main {
 
 button, a, input {
   transition: all .15s ease-in-out !important;
-  font-size: 16px;
+  font-size: 15px;
 }
 
