@@ -61,7 +61,7 @@ const Navigation = () => {
 
     return (
         <header className="flex justify-between items-center md:flex-row flex-col-reverse gap-4">
-            <nav className="flex md:items-center gap-4 uppercase fixed bottom-4 md:relative md:bottom-0">
+            <nav className="flex md:items-center gap-4 uppercase fixed bottom-8 md:relative md:bottom-0">
                 <NavLink to="/" rel='prefetch' className="py-2 px-4 bg-gray-100 rounded-md 
                 border hover:shadow-lg text-center flex items-center gap-2">
                     <box-icon name='home-alt-2' size='15px'></box-icon> <span className='hidden md:flex'>domov</span>
@@ -84,15 +84,16 @@ const Navigation = () => {
                             hover:shadow-lg flex items-center gap-2"
                             onClick={() => setMenuVisible(!menuVisible)}
                         >
-                            <span class="relative flex h-3 w-3 items-center">
-                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff0077] opacity-75"></span>
-                                <span class="relative inline-flex rounded-full h-3 w-3 bg-[#ff0077]"></span>
+                            <span className="relative flex h-[15px] w-[15px] items-center">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff0077] opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-[15px] w-[15px] bg-[#ff0077]"></span>
                             </span>
                             <span className="font-bold">{shortenAddress(walletAddress)}</span>
                         </button>
 
                         {menuVisible && (
-                            <div className="absolute right-[-25%] md:right-0 mt-2 rounded-md w-full bg-gray-100 border min-w-[210px]">
+                            <div className="absolute md:translate-x-[-28%] translate-x-[-50%] left-[50%] md:left-0 mt-2 rounded-md w-full bg-gray-100 
+                            border min-w-[210px] shadow-lg">
                                 <button
                                     className="w-full px-4 py-2 flex items-center gap-2 hover:bg-white
                                     rounded-md justify-center"

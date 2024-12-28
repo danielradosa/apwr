@@ -20,7 +20,7 @@ const Home = () => {
                     ? <>
                         <button onClick={showPaper} className="text-center border px-4 py-2 rounded-md hover:shadow-lg bg-gray-100 mt-8
                         flex items-center gap-2">
-                            <box-icon name='window-close' size="15px" color="red"></box-icon>CLOSE
+                            <box-icon name='window-close' size="15px" color="red"></box-icon>ZATVORIŤ
                         </button>
                         <Whitepaper />
                     </>

@@ -2,7 +2,7 @@ const Tickets = () => {
 
     return (
         <>
-            <div className="w-full flex flex-col border bg-gray-100 rounded-md shadow-lg">
+            <div className="w-full flex flex-col border bg-gray-100 rounded-md shadow-lg tickets">
                 <h2 className="font-bold text-3xl bg-[#004cff] text-white p-4 rounded-md">Lístky</h2>
 
                 <div className="p-4">
@@ -20,7 +20,7 @@ const Tickets = () => {
 
                 <div className="mt-4 flex gap-4 items-center px-4 pb-4">
                     <button className="bg-[#004cff] text-white rounded-md p-2 w-full hover:shadow-lg border uppercase">Kúpiť lístky</button>
-                    <button className="bg-[#004cff] text-white rounded-md p-2 w-full hover:shadow-lg border uppercase">Prevziať všetky odomknuté</button>
+                    <button className="bg-[#004cff] text-white rounded-md p-2 w-full hover:shadow-lg border uppercase text-ellipsis truncate overflow-hidden">Prevziať všetky odomknuté</button>
                 </div>
             </div>
         </>

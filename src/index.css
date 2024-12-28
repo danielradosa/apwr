@@ -22,8 +22,7 @@
 }
 
 body {
-  padding: 2em;
-  max-height: 100svh;
+  padding: 2rem;  
 }
 
 header {
@@ -53,4 +52,22 @@ input {
   display: flex;
   justify-content: space-between;
   padding: 0.4em 0.8em;
+}
+
+@media (max-width: 768px) {
+  .staking, .tickets {
+    font-size: 80%;
+  
+    h2 {
+      font-size: 130%;
+    }
+  
+    button {
+      font-size: 80%;
+    }
+  
+    #amount {
+      font-size: 80%;
+    }
+  }
 }
