@@ -3,13 +3,13 @@
 const Whitepaper = () => {
 
     return (
-        <div className="mt-8 flex flex-col gap-4 border p-4 w-1/3">
-            <h5 className="font-bold text-xl uppercase">Obsah</h5>
-            <ol className="list-roman list-inside">
-                <li>Team</li>
-                <li>Vyuzitie</li>
-                <li>Tokenomika</li>
-            </ol>
+        <div className="mt-8 flex flex-col gap-4 whitepaper w-full items-center">
+            <h3>TEAM <span>0</span></h3>
+
+            <h3>VYUŽITIE <span>1</span></h3>
+
+            <h3>TOKENOMIKA <span>2</span></h3>
+
             <p></p>
         </div>
     )

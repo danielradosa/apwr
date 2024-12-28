@@ -9,7 +9,7 @@
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
   letter-spacing: 0.05em;
   line-height: 1.168;
   font-weight: normal;
@@ -37,8 +37,20 @@ main {
   flex-direction: column;
 }
 
-button, a, input {
+button,
+a,
+input {
   transition: all .15s ease-in-out !important;
   font-size: 15px;
 }
 
+.whitepaper h3 {
+  font-size: 1.6em;
+  background-color: #004cff;
+  color: white;
+  width: 100%;
+  border-radius: 0.375rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4em 0.8em;
+}

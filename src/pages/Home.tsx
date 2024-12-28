@@ -3,20 +3,31 @@ import { Whitepaper } from '../components'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false);
-  
+
     const showPaper = () => {
         setIsOpen((isOpen) => !isOpen)
     }
 
     return (
         <>
-            <h1 className="text-3xl md:text-6xl font-bold text-center mb-8">ĀPWIRE Token</h1>
-            <button onClick={showPaper} className="text-center hover:bg-[#ff0077] hover:text-white">&mdash; whitepaper &mdash;</button>
-            <h2 className="text-center mt-6 text-xl md:text-3xl flex justify-center items-center">
+            <h1 className="text-3xl md:text-6xl font-bold text-center mb-6">ĀPWIRE Token</h1>
+            <h2 className="text-center text-xl md:text-3xl flex justify-center items-center">
                 Oficiálny token značky Āpwire.
             </h2>
 
-            {isOpen && <Whitepaper />}
+            {
+                isOpen
+                    ? <>
+                        <button onClick={showPaper} className="text-center border px-4 py-2 rounded-md hover:shadow-lg bg-gray-100 mt-8
+                        flex items-center gap-2">
+                            <box-icon name='window-close' size="15px" color="red"></box-icon>CLOSE
+                        </button>
+                        <Whitepaper />
+                    </>
+                    : <button onClick={showPaper} className="text-center border px-4 py-2 rounded-md hover:shadow-lg bg-gray-100 mt-8">
+                        WHITEPAPER
+                    </button >
+            }
         </>
     )
 }
