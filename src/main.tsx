@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App.tsx';
 import 'boxicons';
+import * as buffer from "buffer";
+window.Buffer = buffer.Buffer;
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
