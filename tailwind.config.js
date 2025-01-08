@@ -4,6 +4,7 @@ export default {
   theme: {
     listStyleType: {
       roman: 'upper-roman',
+      disc: 'disc' 
     },
     extend: {},
   },

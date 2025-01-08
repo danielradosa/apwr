@@ -61,19 +61,19 @@ const WalletButton: React.FC = () => {
                 {menuVisible && (
                     <div
                         ref={menuRef}
-                        className="absolute mt-2 rounded-md w-full bg-gray-100 border min-w-[210px] shadow-lg md:translate-x-[-28%] translate-x-[-50%] left-[50%] md:left-0"
+                        className="absolute mt-2 rounded-md w-full bg-gray-100 border min-w-[210px] shadow-lg md:translate-x-[-27%] translate-x-[-50%] left-[50%] md:left-0"
                     >
                         <button
                             className="w-full px-4 py-2 flex items-center gap-2 hover:bg-white rounded-md justify-center"
                             onClick={copyToClipboard}
                         >
-                            {copied ? "Skopírovaná!" : "Skopírovať adresu"}
+                            <box-icon name="copy-alt" size="15px"></box-icon>{copied ? "Skopírovaná!" : "Skopírovať adresu"}
                         </button>
                         <button
                             className="w-full px-4 py-2 flex items-center gap-2 hover:bg-white rounded-md justify-center"
                             onClick={disconnectWallet}
                         >
-                            Odpojiť peňaženku
+                            <box-icon name="log-out-circle" size="15px"></box-icon>Odpojiť peňaženku
                         </button>
                     </div>
                 )}

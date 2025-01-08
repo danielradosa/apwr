@@ -1,4 +1,3 @@
-// Staking.tsx
 import { useState, useEffect } from "react";
 import { useWallet } from "../utils/WalletProvider";
 
